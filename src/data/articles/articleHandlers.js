@@ -9,17 +9,17 @@ export function getAllArticles() {
   return articlesResponse.articles
 }
 
+// TODO: create implementation for more interactions
+
 /**
  * Returns the article with matching slug
  * or undefined if none found
  * @param {string} slug
  */
 export function getArticle(slug) {
-  console.log("fetching single article")
+  console.log(`fetching single article with slug: ${slug}`)
 
-  return articlesResponse.articles.find(
-    (article) => article.slug === slug
-  )
+  return undefined
 }
 
 /**
@@ -29,7 +29,5 @@ export function getArticle(slug) {
 export function getArticlesWith(tag) {
   console.log(`fetching articles with filter: ${tag}`)
 
-  return articlesResponse.articles.filter(
-    (article) => article.tagList.includes(tag)
-  )
+  return []
 }
