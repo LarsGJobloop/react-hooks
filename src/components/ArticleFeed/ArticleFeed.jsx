@@ -30,8 +30,8 @@ export function ArticleFeed() {
         <h2>Filters</h2>
         <ul>
           <li>
-            <button onClick={applyFilter}>Tag #1</button>
-            <button onClick={applyFilter}>Tag #2</button>
+            <button onClick={() => applyFilter("Tag #1")}>Tag #1</button>
+            <button onClick={() => applyFilter("Tag #2")}>Tag #2</button>
           </li>
         </ul>
 
