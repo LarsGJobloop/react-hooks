@@ -5,7 +5,7 @@ import { useArticles } from "../../hooks/useArticles";
 
 export function ArticleFeed() {
   // Get the list of all articles
-  const { allArticles, isLoading } = useArticles()
+  const { allArticles, isLoading, error } = useArticles()
     
   // === Event Handlers ===
   // TODO: create implementation for each of these
@@ -33,7 +33,7 @@ export function ArticleFeed() {
       <section>
         <ul className={style["feed"]}>
           {
-            isLoading === null
+            isLoading === true || error
             ? <h3>Loading</h3>
             : allArticles.map((article) => {
               return (
