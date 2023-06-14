@@ -1,0 +1,11 @@
+.container {
+  background-color: brown;
+}
+
+.feed {
+  background-color: cadetblue;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

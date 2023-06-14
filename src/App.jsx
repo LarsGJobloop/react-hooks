@@ -1,4 +1,5 @@
 import './App.css'
+import { ArticleFeed } from './components/ArticleFeed/ArticleFeed'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <h2>Fetching local data</h2>
           </header>
 
+          <ArticleFeed />
           
         </section>
 
