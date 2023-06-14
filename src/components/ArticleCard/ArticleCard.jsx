@@ -1,17 +1,12 @@
 import style from "./style.module.css";
 
 /**
- * 
- * @param {import("../../hooks/articles/useArticles").Article} props 
- * @returns 
+ *
+ * @param {import("../../hooks/articles/useArticles").Article} props
+ * @returns
  */
 export function ArticleCard(props) {
-  const {
-    title,
-    description,
-    tagList,
-    author,
-  } = props;
+  const { title, description, tagList, author } = props;
 
   return (
     <article className={style["container"]}>
