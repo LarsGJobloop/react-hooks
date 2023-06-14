@@ -10,35 +10,7 @@
   flex-grow: 1;
 }
 
-.navbar {
-  height: var(--nav-height);
-
-  position: sticky;
-  top: 0px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  background-color: var(--color-primary-500);
-  padding: 0.5rem 1rem;
-}
-
-.navbar > nav > ul {
-  display: flex;
-  gap: 1rem;
-}
-
-.navbar > nav {
-  font-weight: 800;
-}
-
 .section {
   min-height: 100vh;
   scroll-margin-top: var(--nav-height);
-}
-
-.footer {
-  text-align: center;
-  background-color: var(--color-primary-500);
 }

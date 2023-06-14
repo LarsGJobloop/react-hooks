@@ -1,0 +1,22 @@
+.navbar {
+  height: var(--nav-height);
+
+  position: sticky;
+  top: 0px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--color-primary-500);
+  padding: 0.5rem 1rem;
+}
+
+.navbar > nav > ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar > nav {
+  font-weight: 800;
+}

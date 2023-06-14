@@ -5,35 +5,24 @@ import './index.css'
 import './App.css'
 
 import { ArticleFeed } from './components/ArticleFeed/ArticleFeed'
+import { Navbar } from './components/Navbar/Navbar'
+import { Footer } from './components/Footer/Footer'
 
 function App() {
   return (
     <div className='App'>
-      <header className='navbar'>
-        <h1>Async React</h1>
-
-        <nav>
-          <ul>
-            <li>
-              <a href="#sectionLocalData">Local</a>
-            </li>
-            <li>
-              <a href="#sectionExternalData">External</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <Navbar />
 
       <main>
-        <section id='sectionLocalData' className='section'>
-          <header>
+        <section className='section'>
+          <header id='main'>
             <h2>Fetching data</h2>
           </header>
 
-          <ArticleFeed />
+          <ArticleFeed id="feed" />
           
           <footer>
-            <nav>
+            <nav id='links'>
               <h3>Further Reading</h3>
               <ul className='external-links'>
                 <li>
@@ -54,11 +43,7 @@ function App() {
         </section>
       </main>
 
-      <footer className='footer'>
-        <h2>
-          &copy; Lars Gunnar
-        </h2>
-      </footer>
+      <Footer />
     </div>
   )
 }
