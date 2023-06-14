@@ -1,7 +1,6 @@
 import style from "./style.module.css";
 
 import { ArticleCard } from "../ArticleCard/ArticleCard";
-import { getAllArticles } from "../../data/articles/articleHandlers";
 import { useArticles } from "../../hooks/useArticles";
 
 export function ArticleFeed() {
