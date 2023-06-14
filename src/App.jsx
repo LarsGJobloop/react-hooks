@@ -30,12 +30,18 @@ function App() {
           <footer>
             <nav>
               <h3>Further Reading</h3>
-              <ul>
+              <ul className='external-links'>
                 <li>
-                  <a href="https://react.dev/reference/react/useEffect">React useEffect</a>
-                  <a href="https://react.dev/learn/reusing-logic-with-custom-hooks">React custom hooks</a>
-                  <a href="https://web.dev/fetch-api-error-handling/">Article about Error handling</a>
-                  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch">MDN Try..catch</a>
+                  <a target='_blank' href="https://react.dev/reference/react/useEffect">React useEffect</a>
+                </li>
+                <li>
+                  <a target='_blank' href="https://react.dev/learn/reusing-logic-with-custom-hooks">React custom hooks</a>
+                </li>
+                <li>
+                  <a target='_blank' href="https://web.dev/fetch-api-error-handling/">Article about Error handling</a>
+                </li>
+                <li>
+                  <a target='_blank' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch">MDN Try..catch</a>
                 </li>
               </ul>
             </nav>
