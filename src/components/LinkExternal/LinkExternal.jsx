@@ -3,7 +3,7 @@ import React from "react";
 /**
  * @description Anchor component for external links
  *
- * @param {{href: URL, children: React.JSX.Element}} props
+ * @param {{href: URL}} props
  * @returns
  */
 export function LinkExternal(props) {
