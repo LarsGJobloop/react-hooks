@@ -2,11 +2,12 @@ import style from "./style.module.css";
 
 import { ArticleCard } from "../ArticleCard/ArticleCard";
 import { getAllArticles } from "../../data/articles/articleHandlers";
+import { useArticles } from "../../hooks/useArticles";
 
 export function ArticleFeed() {
-  // Retrive the list of articles
-  const allArticles = getAllArticles();
-
+  // Get the list of all articles
+  const { allArticles, isLoading } = useArticles()
+    
   // === Event Handlers ===
   // TODO: create implementation for each of these
   function nextPage() {console.log("next page")}
@@ -32,13 +33,17 @@ export function ArticleFeed() {
 
       <section>
         <ul className={style["feed"]}>
-          {allArticles.map((article) => {
-            return (
-              <li key={article.slug}>
-                <ArticleCard {...article} />
-              </li>
-            );
-          })}
+          {
+            isLoading === null
+            ? <h3>Loading</h3>
+            : allArticles.map((article) => {
+              return (
+                <li key={article.slug}>
+                  <ArticleCard {...article} />
+                </li>
+              );
+            })
+          }
         </ul>
       </section>
 
