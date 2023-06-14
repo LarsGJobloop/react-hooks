@@ -44,8 +44,10 @@ export function useArticles() {
     () => {
       async function fetchArticles() {
         try {
-          const articles = await getAllArticlesAsync()
-          setAllArticles(articles)
+          const response = await fetch("https://api.realworld.io/api/articles?limit=20")
+          const data = await response.json()
+
+          setAllArticles(data.articles)
         } catch (error) {
           setError(error)
         } finally {
