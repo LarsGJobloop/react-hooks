@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-import { getAllArticlesAsync } from "../../data/articles/articleHandlers"
 
 /**
  * @description
@@ -45,6 +44,7 @@ export function useArticles() {
       async function fetchArticles() {
         try {
           const response = await fetch("https://api.realworld.io/api/articles?limit=20")
+          response.ok
           const data = await response.json()
 
           setAllArticles(data.articles)
