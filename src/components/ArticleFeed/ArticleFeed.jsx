@@ -8,21 +8,12 @@ export function ArticleFeed() {
   const allArticles = getAllArticles();
 
   // === Event Handlers ===
-  // TODO: figure out how to paginate the result
-  function nextPage() {
-    console.log("next page");
-  }
-  function previousPage() {
-    console.log("previous page");
-  }
+  // TODO: create implementation for each of these
+  function nextPage() {console.log("next page")}
+  function previousPage() {console.log("previous page")}
 
-  // TODO: figure out how to filter the list
-  function applyFilter(filter) {
-    console.log(`applying filter: ${filter}`);
-  }
-  function resetFilter() {
-    console.log("resetting filters");
-  }
+  function applyFilter(filter) {console.log(`applying filter: ${filter}`)}
+  function resetFilter() {console.log("resetting filters")}
 
   // === The HTML (JSX) ===
   return (
