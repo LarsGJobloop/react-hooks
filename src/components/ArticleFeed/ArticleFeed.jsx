@@ -1,7 +1,7 @@
 import style from "./style.module.css";
 
 import { ArticleCard } from "../ArticleCard/ArticleCard";
-import { useArticles } from "../../hooks/useArticles";
+import { useArticles } from '../../hooks/articles/useArticles'
 
 export function ArticleFeed() {
   // Get the list of all articles

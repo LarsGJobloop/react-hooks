@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { getAllArticlesAsync } from "../data/articles/articleHandlers"
+import { getAllArticlesAsync } from "../../data/articles/articleHandlers"
 
 export function useArticles() {
   const [allArticles, setAllArticles] = useState(null)
