@@ -27,6 +27,7 @@ function App() {
                 <li>
                   <a
                     target="_blank"
+                    rel="noreferrer"
                     href="https://react.dev/reference/react/useEffect"
                   >
                     React useEffect
@@ -35,6 +36,7 @@ function App() {
                 <li>
                   <a
                     target="_blank"
+                    rel="noreferrer"
                     href="https://react.dev/learn/reusing-logic-with-custom-hooks"
                   >
                     React custom hooks
@@ -43,6 +45,7 @@ function App() {
                 <li>
                   <a
                     target="_blank"
+                    rel="noreferrer"
                     href="https://web.dev/fetch-api-error-handling/"
                   >
                     Article about Error handling
@@ -51,13 +54,14 @@ function App() {
                 <li>
                   <a
                     target="_blank"
+                    rel="noreferrer"
                     href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch"
                   >
                     MDN Try..catch
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://jsdoc.app/tags-typedef.html">
+                  <a target="_blank" rel="noreferrer" href="https://jsdoc.app/tags-typedef.html">
                     JSDoc Type definition
                   </a>
                 </li>

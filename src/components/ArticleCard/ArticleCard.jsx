@@ -1,16 +1,15 @@
 import style from "./style.module.css";
 
+/**
+ * 
+ * @param {import("../../hooks/articles/useArticles").Article} props 
+ * @returns 
+ */
 export function ArticleCard(props) {
   const {
-    slug,
     title,
     description,
-    body,
     tagList,
-    createdAt,
-    updatedAt,
-    favorited,
-    favoritesCount,
     author,
   } = props;
 
