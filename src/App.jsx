@@ -1,4 +1,9 @@
+import './styles/normalize.css'
+import './styles/palettes.css'
+import './styles/typography.css'
+import './index.css'
 import './App.css'
+
 import { ArticleFeed } from './components/ArticleFeed/ArticleFeed'
 
 function App() {

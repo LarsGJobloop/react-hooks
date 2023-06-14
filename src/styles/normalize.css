@@ -1,0 +1,15 @@
+/* Overrides */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
