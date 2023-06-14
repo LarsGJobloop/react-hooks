@@ -1,19 +1,27 @@
 import style from "./style.module.css";
 
 import { ArticleCard } from "../ArticleCard/ArticleCard";
-import { useArticles } from '../../hooks/articles/useArticles'
+import { useArticles } from "../../hooks/articles/useArticles";
 
 export function ArticleFeed() {
   // Get the list of all articles
-  const { allArticles, isLoading, error } = useArticles()
-    
+  const { allArticles, isLoading, error } = useArticles();
+
   // === Event Handlers ===
   // TODO: create implementation for each of these
-  function nextPage() {console.log("next page")}
-  function previousPage() {console.log("previous page")}
+  function nextPage() {
+    console.log("next page");
+  }
+  function previousPage() {
+    console.log("previous page");
+  }
 
-  function applyFilter(filter) {console.log(`applying filter: ${filter}`)}
-  function resetFilter() {console.log("resetting filters")}
+  function applyFilter(filter) {
+    console.log(`applying filter: ${filter}`);
+  }
+  function resetFilter() {
+    console.log("resetting filters");
+  }
 
   // === The HTML (JSX) ===
   return (
@@ -32,17 +40,17 @@ export function ArticleFeed() {
 
       <section>
         <ul className={style["feed"]}>
-          {
-            isLoading === true || error
-            ? <h3>Loading</h3>
-            : allArticles.map((article) => {
+          {isLoading === true || error ? (
+            <h3>Loading</h3>
+          ) : (
+            allArticles.map((article) => {
               return (
                 <li key={article.slug}>
                   <ArticleCard {...article} />
                 </li>
               );
             })
-          }
+          )}
         </ul>
       </section>
 

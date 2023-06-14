@@ -1,26 +1,26 @@
-import articlesResponse from './articles.json'
+import articlesResponse from "./articles.json";
 
 /**
  * Returns a list of all the articles
  */
 export function getAllArticles() {
-  console.log("fetching all articles")
+  console.log("fetching all articles");
 
   // Create a new shallow copy to mock new response obects
-  return articlesResponse.articles
+  return articlesResponse.articles;
 }
 
 /**
  * Resolves to a list of all the articles
  */
 export async function getAllArticlesAsync() {
-  console.log("fetching all articles, Async")
+  console.log("fetching all articles, Async");
 
   // Delay for 200 - 3200ms
-  await sleepFor(200 + Math.random()*3000)
+  await sleepFor(200 + Math.random() * 3000);
 
   // Create a new shallow copy to mock new response obects
-  return [...articlesResponse.articles]
+  return [...articlesResponse.articles];
 }
 
 // TODO: create implementation for more interactions
@@ -31,9 +31,9 @@ export async function getAllArticlesAsync() {
  * @param {string} slug
  */
 export function getArticle(slug) {
-  console.log(`fetching single article with slug: ${slug}`)
+  console.log(`fetching single article with slug: ${slug}`);
 
-  return undefined
+  return undefined;
 }
 
 /**
@@ -42,21 +42,20 @@ export function getArticle(slug) {
  * @param {string} tag
  */
 export function getArticlesWith(tag) {
-  console.log(`fetching articles with filter: ${tag}`)
+  console.log(`fetching articles with filter: ${tag}`);
 
-  return []
+  return [];
 }
-
 
 // Utility functions for mocking requests
 
 /**
- * Returns a promise which can be awaited. 
- * @param {number} milliSeconds 
+ * Returns a promise which can be awaited.
+ * @param {number} milliSeconds
  * @returns {Promise<void>}
  */
 function sleepFor(milliSeconds) {
   return new Promise((resolve) => {
-    setTimeout(resolve, milliSeconds)
-  })
+    setTimeout(resolve, milliSeconds);
+  });
 }

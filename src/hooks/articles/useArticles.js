@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 
 /**
  * @description
  * The article object returned from the realworld API
- * 
+ *
  * @typedef {{
  *  slug: string;
  *  title: string;
@@ -26,7 +26,7 @@ import { useState, useEffect } from "react"
 /**
  * @description Returns a set of variables and methods for
  * interacting with the articles
- * 
+ *
  * @returns {{
  *  isLoading: boolean
  *  error: null | error
@@ -34,34 +34,33 @@ import { useState, useEffect } from "react"
  * }}
  */
 export function useArticles() {
-  const [allArticles, setAllArticles] = useState(null)
-  const [error, setError] = useState(null)
-  const [isLoading, setLoading] = useState(true)
+  const [allArticles, setAllArticles] = useState(null);
+  const [error, setError] = useState(null);
+  const [isLoading, setLoading] = useState(true);
 
   // Retrive the list of articles
-  useEffect(
-    () => {
-      async function fetchArticles() {
-        try {
-          const response = await fetch("https://api.realworld.io/api/articles?limit=20")
-          const data = await response.json()
+  useEffect(() => {
+    async function fetchArticles() {
+      try {
+        const response = await fetch(
+          "https://api.realworld.io/api/articles?limit=20"
+        );
+        const data = await response.json();
 
-          setAllArticles(data.articles)
-        } catch (error) {
-          setError(error)
-        } finally {
-          setLoading(false)
-        }
+        setAllArticles(data.articles);
+      } catch (error) {
+        setError(error);
+      } finally {
+        setLoading(false);
       }
-      
-      fetchArticles()
-    },
-    []
-  )
+    }
+
+    fetchArticles();
+  }, []);
 
   return {
     isLoading,
     error,
     allArticles,
-  }
+  };
 }

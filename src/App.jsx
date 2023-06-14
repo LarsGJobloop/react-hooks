@@ -1,43 +1,65 @@
-import './styles/normalize.css'
-import './styles/palettes.css'
-import './styles/typography.css'
-import './App.css'
+import "./styles/normalize.css";
+import "./styles/palettes.css";
+import "./styles/typography.css";
+import "./App.css";
 
-import { ArticleFeed } from './components/ArticleFeed/ArticleFeed'
-import { Navbar } from './components/Navbar/Navbar'
-import { Footer } from './components/Footer/Footer'
+import { ArticleFeed } from "./components/ArticleFeed/ArticleFeed";
+import { Navbar } from "./components/Navbar/Navbar";
+import { Footer } from "./components/Footer/Footer";
 
 function App() {
   return (
-    <div className='App'>
+    <div className="App">
       <Navbar />
 
       <main>
-        <section className='section'>
-          <header id='main'>
+        <section className="section">
+          <header id="main">
             <h2>Fetching data</h2>
           </header>
 
           <ArticleFeed id="feed" />
-          
+
           <footer>
-            <nav id='links'>
+            <nav id="links">
               <h3>Further Reading</h3>
-              <ul className='external-links'>
+              <ul className="external-links">
                 <li>
-                  <a target='_blank' href="https://react.dev/reference/react/useEffect">React useEffect</a>
+                  <a
+                    target="_blank"
+                    href="https://react.dev/reference/react/useEffect"
+                  >
+                    React useEffect
+                  </a>
                 </li>
                 <li>
-                  <a target='_blank' href="https://react.dev/learn/reusing-logic-with-custom-hooks">React custom hooks</a>
+                  <a
+                    target="_blank"
+                    href="https://react.dev/learn/reusing-logic-with-custom-hooks"
+                  >
+                    React custom hooks
+                  </a>
                 </li>
                 <li>
-                  <a target='_blank' href="https://web.dev/fetch-api-error-handling/">Article about Error handling</a>
+                  <a
+                    target="_blank"
+                    href="https://web.dev/fetch-api-error-handling/"
+                  >
+                    Article about Error handling
+                  </a>
                 </li>
                 <li>
-                  <a target='_blank' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch">MDN Try..catch</a>
+                  <a
+                    target="_blank"
+                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch"
+                  >
+                    MDN Try..catch
+                  </a>
                 </li>
                 <li>
-                  <a target='_blank' href="https://jsdoc.app/tags-typedef.html">JSDoc Type definition</a>
+                  <a target="_blank" href="https://jsdoc.app/tags-typedef.html">
+                    JSDoc Type definition
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -47,7 +69,7 @@ function App() {
 
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
