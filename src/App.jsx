@@ -22,19 +22,24 @@ function App() {
       <main>
         <section id='sectionLocalData' className='section'>
           <header>
-            <h2>Fetching local data</h2>
+            <h2>Fetching data</h2>
           </header>
 
           <ArticleFeed />
           
-        </section>
-
-        <section id='sectionExternalData' className='section'>
-          <header>
-            <h2>Fetching external data</h2>
-          </header>
-
-          
+          <footer>
+            <nav>
+              <h3>Further Reading</h3>
+              <ul>
+                <li>
+                  <a href="https://react.dev/reference/react/useEffect">React useEffect</a>
+                  <a href="https://react.dev/learn/reusing-logic-with-custom-hooks">React custom hooks</a>
+                  <a href="https://web.dev/fetch-api-error-handling/">Article about Error handling</a>
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch">MDN Try..catch</a>
+                </li>
+              </ul>
+            </nav>
+          </footer>
         </section>
       </main>
 
