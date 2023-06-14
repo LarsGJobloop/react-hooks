@@ -6,6 +6,7 @@ import "./App.css";
 import { ArticleFeed } from "./components/ArticleFeed/ArticleFeed";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Footer } from "./components/Footer/Footer";
+import { LinkExternal } from "./components/LinkExternal/LinkExternal";
 
 function App() {
   return (
@@ -25,45 +26,29 @@ function App() {
               <h3>Further Reading</h3>
               <ul className="external-links">
                 <li>
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://react.dev/reference/react/useEffect"
-                  >
+                  <LinkExternal href="https://react.dev/reference/react/useEffect">
                     React useEffect
-                  </a>
+                  </LinkExternal>
                 </li>
                 <li>
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://react.dev/learn/reusing-logic-with-custom-hooks"
-                  >
+                  <LinkExternal href="https://react.dev/learn/reusing-logic-with-custom-hooks">
                     React custom hooks
-                  </a>
+                  </LinkExternal>
                 </li>
                 <li>
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://web.dev/fetch-api-error-handling/"
-                  >
+                  <LinkExternal href="https://web.dev/fetch-api-error-handling/">
                     Article about Error handling
-                  </a>
+                  </LinkExternal>
                 </li>
                 <li>
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch"
-                  >
+                  <LinkExternal href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch">
                     MDN Try..catch
-                  </a>
+                  </LinkExternal>
                 </li>
                 <li>
-                  <a target="_blank" rel="noreferrer" href="https://jsdoc.app/tags-typedef.html">
+                  <LinkExternal href="https://jsdoc.app/tags-typedef.html">
                     JSDoc Type definition
-                  </a>
+                  </LinkExternal>
                 </li>
               </ul>
             </nav>
