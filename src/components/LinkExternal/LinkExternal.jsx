@@ -1,5 +1,3 @@
-import React from "react";
-
 /**
  * @description Anchor component for external links
  *
