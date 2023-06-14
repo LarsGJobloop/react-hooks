@@ -37,6 +37,9 @@ function App() {
                 <li>
                   <a target='_blank' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch">MDN Try..catch</a>
                 </li>
+                <li>
+                  <a target='_blank' href="https://jsdoc.app/tags-typedef.html">JSDoc Type definition</a>
+                </li>
               </ul>
             </nav>
           </footer>
