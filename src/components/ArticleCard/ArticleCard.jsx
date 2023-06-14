@@ -1,6 +1,7 @@
 import style from "./style.module.css";
 
 /**
+ * Component for showing Article teasers
  *
  * @param {import("../../hooks/articles/useArticles").Article} props
  * @returns
